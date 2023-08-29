@@ -7,6 +7,9 @@ license = "GPL-3.0-or-later"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+fastapi = "^0.103.0"
+pydantic-settings = "^2.0.3"
+uvicorn = "^0.23.2"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.0.286"
