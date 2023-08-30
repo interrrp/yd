@@ -7,6 +7,9 @@ from yd.settings import Settings
 def main() -> None:
     settings = Settings()
 
+    if not settings.downloads_dir.exists():
+        settings.downloads_dir.mkdir()
+
     uvicorn.run(app, host=settings.host, port=settings.port)
 
 
